@@ -1,0 +1,25 @@
+jobs:
+    jobdata:
+          -
+            id: 1
+            jobName: 'TapIngestion'
+            jobDescription: 'To execute the Jar file to pass the data to Tap Team'
+            recipients: 'ajay.rajanna@tesco.com'
+            startDateTime: '13/02/2019'
+            active: false
+            executablePath: '/Users/ajayrajanna/POC/Workspace/test/YamlRead-2-0.0.1-SNAPSHOT.jar'
+            configFilePath: '/Users/ajayrajanna/POC/Workspace/test/application.yml'
+            profile: 'ppe'
+            cronExpression: '0 58 12 1/1 * ? *'         
+          -
+            id: 1
+            jobName: 'TapIngestion Test'
+            jobDescription: 'To execute the Jar file to pass the data to Tap Team'
+            recipients: 'ajay.rajanna@tesco.com'
+            startDateTime: '13/02/2019'
+            active: false
+            executablePath: '/Users/ajayrajanna/test.jar'
+            configFilePath: '/Users/ajayrajanna/test.yml'
+            profile: 'ppe'
+            cronExpression: '0 25 12 1/1 * ? *' 
+            
